@@ -4,7 +4,7 @@ from strings import *
 
 def printRecipes(data):
   for key in data['hits'][int(option)-1]['recipe']['ingredients']:
-    print key['text']
+    print (key['text'])
 
 parser = argparse.ArgumentParser(description=DESCRIPTION)
 parser.add_argument('-c', '--calories', help='Show calories', required=False,
@@ -40,10 +40,10 @@ if not args.calories: # print recipe ingredients only
 
 elif(args.calories): # print recipe ingredients and calories
   printRecipes(data)
-  print "Calories: " + str(data['hits'][int(option)-1]['recipe']['calories'])
+  print( "Calories: " + str(data['hits'][int(option)-1]['recipe']['calories']))
 
 if args.detailed_calories: # print recipe ingredients and nutritional info
   printRecipes(data)
   for key in data['hits'][int(option)-1]['recipe']['digest']:
-    print key['label'] + " " + str(key['total']) + key['unit']
+    print (key['label'] + " " + str(key['total']) + key['unit'])
 
