@@ -2,17 +2,9 @@ import requests
 import argparse
 from strings import *
 
-
-
 def printRecipes(data):
   for key in data['hits'][int(option)-1]['recipe']['ingredients']:
     print key['text']
-
-
-
-
-
-
 
 parser = argparse.ArgumentParser(description=DESCRIPTION)
 parser.add_argument('-c', '--calories', help='Show calories', required=False,
