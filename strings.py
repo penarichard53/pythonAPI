@@ -8,3 +8,4 @@ USER_SELECT=
 
 ASK_USER_NUTRITIONAL_INFO = "Would you like to see nutritional info? " 
 
+print(x)
