@@ -1,3 +1,5 @@
+RICHARD = "Richard" 
+
 DESCRIPTION = 
 'Program will reveal recipe ideas for the ingredient the user inputs'
 
