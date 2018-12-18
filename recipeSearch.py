@@ -32,7 +32,7 @@ for key in data['hits']: # print titles of recipes
   i += 1
 
 
-option = raw_input(USER_SELECT)
+option = input(USER_SELECT)
 print(l1[int(option)-1])
 
 if not args.calories: # print recipe ingredients only
