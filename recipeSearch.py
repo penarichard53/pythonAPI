@@ -17,7 +17,7 @@ args = parser.parse_args()
 appid = 'ea7c9913'
 appkey = '8c999d827f6d9b69c8892f47e2bc5cd3'
 
-searchQuery = raw_input(USER_PROMPT)
+searchQuery = input(USER_PROMPT)
 
 r = requests.get('https://api.edamam.com/search?q=' + searchQuery + '&app_id='
    + appid + '&app_key=' + appkey)
